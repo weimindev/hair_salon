@@ -135,16 +135,28 @@
 		display: block;
 	}
 
-	.features {
-		padding: 0;
-		margin: 0;
-		list-style: none;
-
-		.icon::before {
-			padding-right: 0.5rem;
+	ul.services-list {
+		li {
+			padding: 0.9rem 0;
+		}
+		li p {
+			margin-bottom: 0;
 		}
 
-		h5 {
+		.service-options {
+			padding: 0;
 			margin: 0;
+			list-style: none;
+			@include vendor('display', 'flex');
+
+			li {
+				padding: 0 0.9rem;
+				border-top: none;
+				border-left: solid 1px rgba(255, 255, 255, 0.25);
+
+				&:first-child {
+					border-left: none;
+				}
+			}
 		}
 	}

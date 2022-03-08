@@ -37,12 +37,12 @@
 		white-space: nowrap;
 
 		&:hover {
-			box-shadow: inset 0 0 0 2px _palette(accent3);
-			color: _palette(accent3) !important;
+			box-shadow: inset 0 0 0 2px _palette(fg);
+			color: _palette(fg) !important;
 		}
 
 		&:active {
-			background-color: transparentize(_palette(accent3), 0.875);
+			background-color: transparentize(_palette(fg), 0.875);
 		}
 
 		&.icon {
@@ -137,11 +137,11 @@
 			}
 
 			&:hover {
-				background-color: _palette(accent3);
+				background-color: _palette(fg);
 			}
 
 			&:active {
-				background-color: desaturate(darken(_palette(accent3), 6), 3);
+				background-color: desaturate(darken(_palette(fg), 6), 3);
 			}
 		}
 
